@@ -1,0 +1,4 @@
+whisper_step_output/
+uploads/
+__pycache__/
+.ipynb_checkpoints/

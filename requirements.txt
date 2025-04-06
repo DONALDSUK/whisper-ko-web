@@ -1,0 +1,5 @@
+flask
+transformers==4.39.3
+torchaudio
+librosa
+g2pk

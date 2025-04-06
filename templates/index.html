@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>발음 피드백 웹사이트</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>🎤 발음 피드백 웹사이트</h1>
+  <form method="POST" enctype="multipart/form-data">
+    <label for="text">👉 말하고자 한 문장:</label>
+    <input type="text" name="text" placeholder="예: 그는 괜찮은 척하려고 애쓰는 것 같았다." required>
+
+    <label for="file">🔊 WAV 파일 업로드:</label>
+    <input type="file" name="file" accept=".wav" required>
+
+    <button type="submit">분석하기</button>
+  </form>
+
+  {% if result %}
+  <div class="result">
+    <h2>🔎 분석 결과</h2>
+    <p><strong>읽을 문장:</strong> {{ result.original_text }}</p>
+    <p><strong>읽을 문장의 정확한 발음:</strong><br><pre>{{ result.original_pron }}</pre></p>
+    <p><strong>내 발음 인식 결과:</strong> {{ result.stt_text }}</p>
+    <p><strong>내 발음:</strong><br><pre>{{ result.stt_pron }}</pre></p>
+  </div>
+  {% endif %}
+</body>
+</html>
