@@ -27,7 +27,7 @@
 ```
 your-project-folder/
 ├── app.py
-├── whisper-model.py
+├── resamplate.py
 ├── whisper_step_output/     👈 모델 다운로드 후 여기에 넣기
 │   ├── config.json
 │   ├── preprocessor_config.json
