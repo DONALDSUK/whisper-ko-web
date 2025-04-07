@@ -47,11 +47,6 @@ pip install -r requirements.txt
 python app.py
 ```
 
-### 4. 접속
-
-[http://localhost:5000](http://localhost:5000)
-
----
 
 ## 📦 주요 라이브러리
 
