@@ -24,6 +24,7 @@
     <p><strong>읽을 문장의 정확한 발음:</strong><br><pre>{{ result.original_pron }}</pre></p>
     <p><strong>내 발음 인식 결과:</strong> {{ result.stt_text }}</p>
     <p><strong>내 발음:</strong><br><pre>{{ result.stt_pron }}</pre></p>
+    <p><strong>📊 발음 유사도:</strong> {{ "%1.1f"|format(result.similarity * 100) }}%</p>
   </div>
   {% endif %}
 </body>
