@@ -1,4 +1,4 @@
-# 🗣️ Whisper Pronouncer KR 🇰🇷
+# 🗣️ Whisper Pronouncer KR
 
 한국어 발음 교정을 위한 Whisper 기반 웹 애플리케이션입니다.  
 사용자가 직접 음성 파일을 업로드하고 입력 문장을 비교하여 발음을 평가할 수 있습니다.
